@@ -1,0 +1,11 @@
+﻿@page "/WidgetMandS/{FullPage:bool}"
+<iframe src="https://www.m-s.ch/" width=@width height=@height style="border: none"></iframe>
+
+@code {
+
+    [Parameter]
+    public bool FullPage { get; set; }
+
+    private string width { get { return (FullPage) ? "1600px" : "798px"; } }
+    private string height { get { return (FullPage) ? "800px" : "390px"; } }
+}

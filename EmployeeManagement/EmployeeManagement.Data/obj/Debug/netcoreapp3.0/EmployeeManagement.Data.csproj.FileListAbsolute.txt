@@ -1,0 +1,16 @@
+C:\NAVEEN\Education\Blazor Projects\Blazor.Data\bin\Debug\netcoreapp3.0\EmployeeManagement.Data.deps.json
+C:\NAVEEN\Education\Blazor Projects\Blazor.Data\bin\Debug\netcoreapp3.0\EmployeeManagement.Data.dll
+C:\NAVEEN\Education\Blazor Projects\Blazor.Data\bin\Debug\netcoreapp3.0\EmployeeManagement.Data.pdb
+C:\NAVEEN\Education\Blazor Projects\Blazor.Data\bin\Debug\netcoreapp3.0\System.Data.SqlClient.dll
+C:\NAVEEN\Education\Blazor Projects\Blazor.Data\obj\Debug\netcoreapp3.0\EmployeeManagement.Data.AssemblyInfoInputs.cache
+C:\NAVEEN\Education\Blazor Projects\Blazor.Data\obj\Debug\netcoreapp3.0\EmployeeManagement.Data.AssemblyInfo.cs
+C:\NAVEEN\Education\Blazor Projects\Blazor.Data\obj\Debug\netcoreapp3.0\EmployeeManagement.Data.csproj.CopyComplete
+C:\NAVEEN\Education\Blazor Projects\Blazor.Data\obj\Debug\netcoreapp3.0\EmployeeManagement.Data.dll
+C:\NAVEEN\Education\Blazor Projects\Blazor.Data\obj\Debug\netcoreapp3.0\EmployeeManagement.Data.pdb
+C:\NAVEEN\Education\Blazor Projects\EmployeeManagement\EmployeeManagement.Data\bin\Debug\netcoreapp3.0\EmployeeManagement.Data.deps.json
+C:\NAVEEN\Education\Blazor Projects\EmployeeManagement\EmployeeManagement.Data\bin\Debug\netcoreapp3.0\EmployeeManagement.Data.dll
+C:\NAVEEN\Education\Blazor Projects\EmployeeManagement\EmployeeManagement.Data\bin\Debug\netcoreapp3.0\EmployeeManagement.Data.pdb
+C:\NAVEEN\Education\Blazor Projects\EmployeeManagement\EmployeeManagement.Data\obj\Debug\netcoreapp3.0\EmployeeManagement.Data.AssemblyInfoInputs.cache
+C:\NAVEEN\Education\Blazor Projects\EmployeeManagement\EmployeeManagement.Data\obj\Debug\netcoreapp3.0\EmployeeManagement.Data.AssemblyInfo.cs
+C:\NAVEEN\Education\Blazor Projects\EmployeeManagement\EmployeeManagement.Data\obj\Debug\netcoreapp3.0\EmployeeManagement.Data.dll
+C:\NAVEEN\Education\Blazor Projects\EmployeeManagement\EmployeeManagement.Data\obj\Debug\netcoreapp3.0\EmployeeManagement.Data.pdb

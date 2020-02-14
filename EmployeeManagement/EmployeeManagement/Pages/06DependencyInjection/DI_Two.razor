@@ -1,0 +1,19 @@
+﻿@page "/DependencyInjectiontwo"
+@inject ISingletonService singletonService
+@inject IScopedService scopedService
+@inject ITransientService transientService
+
+
+<h4>"Blazor" Service Lifetimes Page 2</h4>
+<hr />
+
+<div class="row">
+    <div class="col-md-12">
+        <ul>
+            <li>Singleton Service - @singletonService.ServiceId</li>
+            <li>Scoped Service - @scopedService.ServiceId</li>
+            <li>Transient Service - @transientService.ServiceId</li>
+        </ul>
+    </div>
+</div>
+

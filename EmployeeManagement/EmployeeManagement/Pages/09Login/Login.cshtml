@@ -1,0 +1,57 @@
+﻿@page "/login"
+@model EmployeeManagement.LoginModel
+@{
+    ViewData["Title"] = "Log in";
+}
+<head>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"/>
+
+    <style>
+            /*Login*/
+        #account div
+        {
+            width: 50%;
+            margin: auto;
+        }
+
+        #login-container
+        {
+            margin-top: 10% !important;
+        }
+    </style>
+</head>
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+<form id="account" method="post">
+    @if(!string.IsNullOrEmpty((string?) TempData["LoginError"]))
+    {
+        <div style="font-weight: bold; color: red">
+            Login failed. @TempData["LoginError"]
+        </div>
+    }
+    <div id="login-container">
+        <div>
+            <br/><br/><br/><br/><br/>
+        </div>
+        <div class="col-12 row">
+            <h3 style="font-weight: bold; color: purple">@ViewData["Title"]</h3>
+        </div>
+        <div>
+            <br/>
+        </div>
+        <div class="col-12 row">
+            <input class="form-control col-12" asp-for="Email" placeholder="email address" value="hans.imboden@m-s.in"/>
+        </div>
+        <br/>
+        <div class="col-12 row">
+            <input type="password" class="form-control col-12" asp-for="Password" placeholder="password" value="123456"/>
+        </div>
+        <br/>
+        <div class="col-12 row">
+            <span class="col-12"></span>
+            <input type="submit" class="form-control col-6 btn btn-primary" value="Login"/>
+        </div>
+    </div>
+</form>

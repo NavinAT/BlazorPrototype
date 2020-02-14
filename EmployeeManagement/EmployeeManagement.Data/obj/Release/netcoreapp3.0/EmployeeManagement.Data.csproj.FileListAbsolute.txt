@@ -1,0 +1,8 @@
+C:\NAVEEN\Education\Blazor Projects\EmployeeManagement\EmployeeManagement.Data\bin\Release\netcoreapp3.0\EmployeeManagement.Data.deps.json
+C:\NAVEEN\Education\Blazor Projects\EmployeeManagement\EmployeeManagement.Data\bin\Release\netcoreapp3.0\EmployeeManagement.Data.dll
+C:\NAVEEN\Education\Blazor Projects\EmployeeManagement\EmployeeManagement.Data\bin\Release\netcoreapp3.0\EmployeeManagement.Data.pdb
+C:\NAVEEN\Education\Blazor Projects\EmployeeManagement\EmployeeManagement.Data\obj\Release\netcoreapp3.0\EmployeeManagement.Data.csprojAssemblyReference.cache
+C:\NAVEEN\Education\Blazor Projects\EmployeeManagement\EmployeeManagement.Data\obj\Release\netcoreapp3.0\EmployeeManagement.Data.AssemblyInfoInputs.cache
+C:\NAVEEN\Education\Blazor Projects\EmployeeManagement\EmployeeManagement.Data\obj\Release\netcoreapp3.0\EmployeeManagement.Data.AssemblyInfo.cs
+C:\NAVEEN\Education\Blazor Projects\EmployeeManagement\EmployeeManagement.Data\obj\Release\netcoreapp3.0\EmployeeManagement.Data.dll
+C:\NAVEEN\Education\Blazor Projects\EmployeeManagement\EmployeeManagement.Data\obj\Release\netcoreapp3.0\EmployeeManagement.Data.pdb

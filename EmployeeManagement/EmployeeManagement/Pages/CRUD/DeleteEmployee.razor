@@ -1,0 +1,52 @@
+﻿@page "/deleteemployee/{EmployeeNumber:guid}"
+@inherits DeleteEmployeeBase
+
+<h4>Delete Employee</h4>
+
+<div class="alert alert-warning">
+    <strong>Warning!</strong> Do you really want to delete <b>@employee.EmployeeName</b> record.
+</div>
+
+@if (employee == null)
+{
+    <div class="alert alert-warning">
+        <strong>Warning!</strong> No Employee record found to delete.
+    </div>
+}
+else
+{
+    <table class="table">
+
+        <tbody>
+        <tr>
+            <th>Employee Name</th>
+            <td>@employee.EmployeeName</td>
+        </tr>
+        <tr>
+            <th>Department</th>
+            <td>@employee.Department</td>
+        </tr>
+        <tr>
+            <th>Salary</th>
+            <td>@employee.Salary</td>
+        </tr>
+        <tr>
+            <th>Date of Birth</th>
+            <td>@employee.Dob</td>
+        </tr>
+        <tr>
+            <th>City</th>
+            <td>@employee.City</td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+                <input type="button" class="btn btn-primary" @onclick="@Delete" value="Delete" />
+                <input type="button" class="btn" @onclick="@Cancel" value="Cancel" />
+            </div>
+        </div>
+    </div>
+}
+

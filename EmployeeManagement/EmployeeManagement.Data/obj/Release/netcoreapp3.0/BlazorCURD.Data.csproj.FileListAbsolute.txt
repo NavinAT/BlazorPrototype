@@ -1,0 +1,10 @@
+C:\NAVEEN\Education\Blazor Projects\Blazor.Data\bin\Release\netcoreapp3.0\BlazorCURD.Data.deps.json
+C:\NAVEEN\Education\Blazor Projects\Blazor.Data\bin\Release\netcoreapp3.0\BlazorCURD.Data.dll
+C:\NAVEEN\Education\Blazor Projects\Blazor.Data\bin\Release\netcoreapp3.0\BlazorCURD.Data.pdb
+C:\NAVEEN\Education\Blazor Projects\Blazor.Data\bin\Release\netcoreapp3.0\System.Data.SqlClient.dll
+C:\NAVEEN\Education\Blazor Projects\Blazor.Data\obj\Release\netcoreapp3.0\BlazorCURD.Data.csprojAssemblyReference.cache
+C:\NAVEEN\Education\Blazor Projects\Blazor.Data\obj\Release\netcoreapp3.0\BlazorCURD.Data.AssemblyInfoInputs.cache
+C:\NAVEEN\Education\Blazor Projects\Blazor.Data\obj\Release\netcoreapp3.0\BlazorCURD.Data.AssemblyInfo.cs
+C:\NAVEEN\Education\Blazor Projects\Blazor.Data\obj\Release\netcoreapp3.0\BlazorCURD.Data.csproj.CopyComplete
+C:\NAVEEN\Education\Blazor Projects\Blazor.Data\obj\Release\netcoreapp3.0\BlazorCURD.Data.dll
+C:\NAVEEN\Education\Blazor Projects\Blazor.Data\obj\Release\netcoreapp3.0\BlazorCURD.Data.pdb
