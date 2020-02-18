@@ -8,13 +8,15 @@
 
 <h6>JavaScript Prompt Demo</h6>
 
-<button type="button" class="btn btn-primary" @onclick="@LanuchJSPrompt">Launch JS Prompt</button>
+<button type="button" class="btn btn-primary" @onclick="@LaunchJsPrompt">Launch JS Prompt</button>
 <hr />
-<h3 id="welcome" style="color: aqua;font-style: italic"></h3>
+<h3 id="welcome" style="color: cadetblue;font-style: italic"></h3>
+<a href="/callingcsmethod"><strong>Navigate to JS to CSharp method calling page</strong></a>
+
 
 @code {
 
-    private async Task LanuchJSPrompt()
+    private async Task LaunchJsPrompt()
     {
         var name = await JsRuntime.InvokeAsync<string>("ShowPrompt", "What's your name ?");
 

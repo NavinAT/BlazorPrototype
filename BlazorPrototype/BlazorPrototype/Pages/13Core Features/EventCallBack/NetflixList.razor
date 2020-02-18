@@ -1,0 +1,34 @@
+﻿@if (Series == null || Series.Count == 0)
+{
+    <img src="https://media2.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Loading...."/>
+}
+else if (Series.Count == 0)
+{
+    <div class="alert alert-warning">
+        <p>There are no records to show</p>
+    </div>
+}
+else
+{
+    <input type="checkbox" @bind="@DisplayButton">
+
+    @foreach (var serie in Series)
+    {
+        <IndividualSeries Series="@serie" DisplayButtons="@DisplayButton" DeleteSeries="@DeleteSeries"></IndividualSeries>
+    }
+}
+
+@code
+{
+    [Parameter]
+    public List<WebSeries> Series { get; set; }
+
+    bool DisplayButton = true;
+
+    private void DeleteSeries(WebSeries movie)
+    {
+        Series.Remove(movie);
+    }
+
+}
+

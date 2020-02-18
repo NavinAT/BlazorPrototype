@@ -35,8 +35,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\08JavaScriptInterop\" />
-    <Folder Include="Pages\10StateManagement\DependencyInjection\" />
+    <Folder Include="Pages\08JavaScriptInterop\CallingCSharpMethod\" />
     <Folder Include="Pages\10StateManagement\ThirdPartyDllProtectedBrowserStorage\" />
     <Folder Include="Pages\11ErrorHandling\" />
     <Folder Include="wwwroot\Images\" />

@@ -1,5 +1,6 @@
 using BlazorPrototype;
 using BlazorPrototype.Pages._06DependencyInjection;
+using BlazorPrototype.Pages._10StateManagement.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -33,6 +34,7 @@ namespace BlazorAppCRUD
 			services.AddProtectedBrowserStorage();
 			services.AddSingleton<EmployeeDetails>();
             services.AddSingleton<InsuranceTable>();
+            services.AddSingleton<InsuranceDIState.InsuranceState>();
            
             // Get authentication info
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();

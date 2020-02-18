@@ -1,0 +1,24 @@
+﻿<div>
+    <p>Title: <b>@Series.Title</b></p>
+    <p>Release Date: <b>@Series.ReleaseDate.ToString("dd MMM yyyy")</b></p>
+
+    @if (DisplayButtons)
+    {
+        <div>
+            <button @onclick="@(() => DeleteSeries.InvokeAsync(Series))">Delete</button>
+        </div>
+        <br />
+    }
+</div>
+
+@code
+{
+    [Parameter] public WebSeries Series { get; set; }
+
+    [Parameter]
+    public bool DisplayButtons { get; set; } = false;
+
+    [Parameter]
+    public EventCallback<WebSeries> DeleteSeries { get; set; }
+
+}

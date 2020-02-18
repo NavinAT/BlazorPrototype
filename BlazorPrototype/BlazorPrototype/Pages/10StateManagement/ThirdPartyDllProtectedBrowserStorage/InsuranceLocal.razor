@@ -1,28 +1,43 @@
 ﻿@page "/insurancelocal"
 @using Microsoft.AspNetCore.ProtectedBrowserStorage
-@inject ProtectedLocalStorage  ProtectedLocalStorage
+@inject ProtectedLocalStorage ProtectedLocalStorage
 
+<div class="div-container">
+    <details>
+        <summary style="color: darkslateblue; font-size: large; font-weight: bolder">About Local Storage</summary>
+        <p><strong>-> </strong>Stores the data in the Browser's local storage. </p>
+        <p><strong>-> </strong>After application disconnected from the deployed server.</p>
+        <p><strong>-> </strong>The state of the data can be fetched back from the local storage when reconnecting to the server.</p>
+        <p><strong>-> </strong>The stored values are dependent to the browser.</p>
+    </details>
+</div>
 
 @if (_insurance != null)
 {
     <p>Insurance Name: <strong>@_insurance.InsuranceName</strong></p>
     <p>Insurance Caption: <strong>@_insurance.Caption</strong></p>
     <p>Insurance Code: <strong>@_insurance.InsuranceCode</strong></p>
-
+    <br/>
 }
 else
 {
-    <img src="https://media2.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Loading...." />
-
-    <button class="btn btn-primary" @onclick="@SetInsuranceDetails">Click me</button>
+    <img src="https://media2.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Loading...."/>
+    <br/>
 }
+<button class="btn btn-primary" @onclick="@SetInsuranceDetails">Click me</button>
+<hr/>
+<a href="/insurancedistate">
+    <strong>
+        <i>Navigate to DI State Management</i>
+    </strong>
+</a>
 
 @code {
     Insurance _insurance;
 
     protected override async Task OnAfterRenderAsync(bool bfirstRender)
     {
-        if(bfirstRender)
+        if (bfirstRender)
         {
             await LoadStateAsync();
             StateHasChanged();
@@ -52,4 +67,5 @@ else
         public string Caption { get; set; }
         public int InsuranceCode { get; set; }
     }
+
 }

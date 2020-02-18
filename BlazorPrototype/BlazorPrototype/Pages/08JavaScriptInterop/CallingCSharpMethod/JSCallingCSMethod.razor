@@ -1,0 +1,41 @@
+﻿@inject IJSRuntime JsRuntime
+@page "/callingcsmethod"
+
+<h3>Invoke C# Method from JS file</h3>
+<button id="AlertButton" type="button" class="btn btn-primary" @onclick="@InvokeJsMethod">Call C# Method</button><br/>
+<hr/>
+<p>See the console for the Count value</p>
+<button id="AlertButton" type="button" class="btn btn-primary" @onclick="@IncrementCount">Increment count in the Console</button><br/>
+<br/>
+<hr/>
+
+@if (!string.IsNullOrEmpty(Message))
+{
+    <div class="alert alert-success" role="alert">
+        @Message
+    </div>
+}
+
+@code {
+    public static string Message { get; set; }
+
+    private void InvokeJsMethod()
+    {
+        JsRuntime.InvokeVoidAsync("JSMethod");
+    }
+
+    [JSInvokable]
+    public static void JsInvokableMethod()
+    {
+        if (string.IsNullOrEmpty(Message))
+            Message = string.Empty;
+
+        Message = "C# Method Invoked from JS Method";
+    }
+
+    private void IncrementCount()
+    {
+        JsRuntime.InvokeAsync<int>("CallCSharpInstanceMethod", DotNetObjectReference.Create(new JsSample()));
+    }
+
+}

@@ -1,0 +1,23 @@
+﻿@page "/EventCallBack"
+
+<div class="div-container">
+    <h4>Netflix Favorites</h4>
+    <NetflixList Series="@_listSeries"></NetflixList>
+</div>
+
+@code
+{
+    private List<WebSeries> _listSeries;
+
+    protected override void OnInitialized()
+    {
+        _listSeries = new List<WebSeries>
+        {
+            new WebSeries {Title = "Stranger Things", ReleaseDate = new DateTime(2019, 05, 21)},
+            new WebSeries {Title = "Money Heist", ReleaseDate = new DateTime(2019, 08, 21)},
+            new WebSeries {Title = "Mad Men", ReleaseDate = new DateTime(2019, 11, 14)},
+            new WebSeries {Title = "Little Things ", ReleaseDate = new DateTime(2020, 01, 15)},
+            new WebSeries {Title = "The Witcher", ReleaseDate = new DateTime(2020, 01, 15)}
+        };
+    }
+}

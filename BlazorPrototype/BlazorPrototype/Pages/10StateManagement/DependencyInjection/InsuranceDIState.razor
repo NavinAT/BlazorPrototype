@@ -1,0 +1,43 @@
+﻿@page "/insurancedistate"
+@inject InsuranceState _insuranceState
+
+<div class="div-container">
+    <details>
+        <summary style="color: darkslateblue; font-size: large; font-weight: bolder">About Dependency Injection State Management</summary>
+        <p><strong>-> </strong>Stores the data in the server memory. </p>
+        <p><strong>-> </strong>Singleton - After application disconnected from the deployed server, the state of the data will be gone.</p>
+        <p><strong>-> </strong>Singleton - Share the data to the entire application.</p>
+        <p><strong>-> </strong>The Singleton values are not dependent to the browser.</p>
+        <p><strong>-> </strong>Scoped - It works like session storage (think of a browser tab).</p>
+    </details>
+</div>
+
+@if(_insuranceState.ShortCaption != null)
+{
+    <p>Insurance Name: <strong>@_insuranceState.ShortCaption</strong></p>
+    <p>Insurance Caption: <strong>@_insuranceState.Caption</strong></p>
+    <p>Insurance Code: <strong>@_insuranceState.InsuranceCode</strong></p>
+}
+else
+{
+    <img src="https://media2.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Loading...." /><br/>
+}
+<button class="btn btn-primary" @onclick="@SetInsuranceDetails">Click me</button>
+
+@code {
+
+   void SetInsuranceDetails()
+    {
+        _insuranceState.ShortCaption = "USB";
+        _insuranceState.Caption = "United State Bank";
+        _insuranceState.InsuranceCode = 100012;
+    }
+
+    public class InsuranceState
+    {
+        public string ShortCaption { get; set; }
+        public string Caption { get; set; }
+        public int InsuranceCode { get; set; }
+
+    }
+}
