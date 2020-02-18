@@ -1,0 +1,55 @@
+﻿@page "/insurancelocal"
+@using Microsoft.AspNetCore.ProtectedBrowserStorage
+@inject ProtectedLocalStorage  ProtectedLocalStorage
+
+
+@if (_insurance != null)
+{
+    <p>Insurance Name: <strong>@_insurance.InsuranceName</strong></p>
+    <p>Insurance Caption: <strong>@_insurance.Caption</strong></p>
+    <p>Insurance Code: <strong>@_insurance.InsuranceCode</strong></p>
+
+}
+else
+{
+    <img src="https://media2.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Loading...." />
+
+    <button class="btn btn-primary" @onclick="@SetInsuranceDetails">Click me</button>
+}
+
+@code {
+    Insurance _insurance;
+
+    protected override async Task OnAfterRenderAsync(bool bfirstRender)
+    {
+        if(bfirstRender)
+        {
+            await LoadStateAsync();
+            StateHasChanged();
+        }
+    }
+
+    async Task LoadStateAsync()
+    {
+        _insurance = await ProtectedLocalStorage.GetAsync<Insurance>("insurance");
+    }
+
+    async Task SetInsuranceDetails()
+    {
+        _insurance = new Insurance
+        {
+            InsuranceName = "LIC",
+            Caption = "Life Insurance Corporation",
+            InsuranceCode = 100013
+        };
+
+        await ProtectedLocalStorage.SetAsync("insurance", _insurance);
+    }
+
+    class Insurance
+    {
+        public string InsuranceName { get; set; }
+        public string Caption { get; set; }
+        public int InsuranceCode { get; set; }
+    }
+}

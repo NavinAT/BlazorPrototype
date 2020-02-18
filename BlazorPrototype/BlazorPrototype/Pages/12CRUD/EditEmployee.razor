@@ -1,0 +1,68 @@
+﻿@page "/editemployee/{EmployeeNumber:guid}"
+@using BlazorPrototype.Data
+@inherits EditEmployeeBase
+
+@if(IsAllowToDisplay)
+{
+        <h4>Edit Employee</h4>
+        <hr/>
+
+    @if(employee == null)
+    {
+        <div class="alert alert-warning">
+            <strong>Warning!</strong> No Employee record found to edit.
+        </div>
+    }
+
+    else
+    {
+        <form>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label for="Name">Name</label>
+                        <input id="Name" class="form-control" placeholder="Enter your Name" @bind="@employee.EmployeeName"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="Department">Department</label>
+                        <input id="Department" class="form-control" placeholder="Enter your Department" @bind="@employee.Department"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="Salary">Salary</label>
+                        <input id="Salary" class="form-control" placeholder="Enter your salary" @bind="@employee.Salary"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="DOB">Date Of Birth</label>
+                        <input id="DOB" class="form-control" placeholder="Enter your Dob" @bind="@employee.Dob" @bind:format="dd/MM/yyyy"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="City">City</label>
+                        <select id="City" class="form-control" @bind="@employee.City">
+                            <option value="">--Select City--</option>
+                            @foreach(string strOption in DropDownValues)
+                            {
+                                <option value="@strOption">@strOption</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        @*<input type="button" class="btn btn-primary" @onclick="@UpdateEmployee" value="Save" />*@
+                        <input type="button" class="btn btn-primary" @onclick="@(() => OnUpdate.InvokeAsync(employee))" value="Save" />
+                        <input type="button" class="btn" @onclick="@Cancel" value="Cancel" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    }
+}
+
+@code{
+
+    [Parameter] public EventCallback<EmployeeInformation> OnUpdate { get; set; }
+
+}
+

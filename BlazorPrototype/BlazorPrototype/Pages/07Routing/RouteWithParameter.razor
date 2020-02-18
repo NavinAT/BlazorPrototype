@@ -1,0 +1,24 @@
+﻿@page "/Routeparameter/{UiDecider}"
+
+<h3>Routing With Parameter</h3>
+
+<hr/>
+@if (UiDecider == "Show")
+{
+    <div class="alert alert-success">
+        The parameter is set to show the UI content
+    </div>
+}
+else
+{
+    <div class="alert alert-warning">
+        The parameter hasn't set to show the UI content
+    </div>
+}
+
+@code {
+
+    [Parameter]
+    public string UiDecider { get; set; }
+
+}

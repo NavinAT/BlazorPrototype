@@ -1,0 +1,59 @@
+﻿@page "/FormValidation"
+@inject IJSRuntime ijsRuntime
+
+<h4>Form Validation</h4>
+<hr />
+
+<EditForm Model="@_student" OnValidSubmit="ValidateAndSubmit">
+    <DataAnnotationsValidator />
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+                <label for="Name">Name*</label>
+                <input id="Name" class="form-control" @bind="@_student.StudentName" />
+                <ValidationMessage For="() => _student.StudentName" />
+            </div>
+            <div class="form-group">
+                <label for="Course">Course*</label>
+                <input id="Course" class="form-control" @bind="@_student.Course" />
+                <ValidationMessage For="() => _student.Course" />
+            </div>
+            <div class="form-group">
+                <label for="Department">Department Code</label>
+                <input id="Department" class="form-control" @bind="@_student.DepartmentCode" />
+                <ValidationMessage For="() => _student.DepartmentCode" />
+            </div>
+            <div class="form-group">
+                <label for="DOB">Date Of Birth*</label>
+                <input id="DOB" class="form-control" @bind="@_student.Dob" @bind:format="dd/mm/yyyy" />
+                <ValidationMessage For="() => _student.Dob" />
+            </div>
+            <div class="form-group">
+                <label for="City">City</label>
+                <select id="City" class="form-control" @bind="@_student.City">
+                    <option value="">--Select City</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Mysore">Mysore</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Kerala">Kerala</option>
+                </select>
+                <ValidationMessage For="() => _student.City" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Save" />
+            </div>
+        </div>
+    </div>
+</EditForm>
+@code {
+    private readonly StudentDetails _student = new StudentDetails();
+
+    void ValidateAndSubmit()
+    {
+        ijsRuntime.InvokeVoidAsync("ValidationAlert");
+    }
+}

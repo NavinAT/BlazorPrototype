@@ -1,0 +1,29 @@
+﻿@page "/insuranceNew"
+@using System.Data
+
+@inject NavigationManager NavigationManager
+@inject InsuranceTable InsuranceTable
+
+<h3>New Insurance</h3>
+<br />
+
+<Field ControlType="TBText" LabelText="Caption" Bind="@rowEDINS["Caption"]" Obj=@rowEDINS></Field>
+<Field ControlType="TBText" LabelText="ShortCaption" Bind="@rowEDINS["ShortCaption"]" Obj=@rowEDINS></Field>
+
+<br/>
+<button @onclick="Save">Save</button>
+
+@code {
+    private DataRow rowEDINS;
+
+    protected override void OnInitialized()
+    {
+        rowEDINS = InsuranceTable.CreateDataRow();
+    }
+
+    private void Save()
+    {
+        InsuranceTable.Add(rowEDINS);
+        NavigationManager.NavigateTo("/insurance");
+    }
+}

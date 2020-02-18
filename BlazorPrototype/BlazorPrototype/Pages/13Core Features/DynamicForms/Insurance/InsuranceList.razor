@@ -1,0 +1,32 @@
+﻿@page "/insurance"
+
+@inject InsuranceTable InsuranceTable;
+
+<h3>Insurance List</h3>
+<br/><br />
+
+@if(DynamicRenderFragment == null)
+{
+    <div class="alert alert-warning">
+        <strong>Loading...</strong>
+    </div>
+}
+else
+{
+    @DynamicRenderFragment
+}
+
+<br />
+<p>
+    <a href="/insuranceNew">Create New Insurance</a>
+</p>
+
+@code {
+
+    public RenderFragment DynamicRenderFragment { get; set; }
+
+    protected override void OnInitialized()
+    {
+        DynamicRenderFragment = DynamicTableTemplate.BuildTable(InsuranceTable.Insurance, true, true, "insurance");
+    }
+}

@@ -1,0 +1,32 @@
+﻿@inherits LayoutComponentBase
+
+<div class="sidebar">
+    <NavMenu/>
+</div>
+
+<div class="main">
+
+    <div class="top-row px-4">
+        <AuthorizeView>
+            <Authorized>
+                <span style="margin-top: -5px;" class="oi oi-account-login"></span><span style="margin-left: 12px;" class="usr-login"><strong>Welcome - @AuthenticationStateTask?.Result?.User.Identity.Name</strong></span>
+            </Authorized>
+            <NotAuthorized>
+                <div class="top-row px-4">
+                    <span class="oi oi-account-login"></span><a href="/login">Login</a>
+                </div>
+            </NotAuthorized>
+        </AuthorizeView>
+    </div>
+
+    <div class="content px-4">
+        @Body
+    </div>
+</div>
+
+@code
+{
+    [CascadingParameter]
+    Task<AuthenticationState> AuthenticationStateTask { get; set; }
+
+}

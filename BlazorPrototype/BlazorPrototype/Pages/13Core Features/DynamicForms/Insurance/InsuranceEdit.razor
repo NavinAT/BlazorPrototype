@@ -1,0 +1,32 @@
+﻿@page "/insuranceEdit/{Id:int}"
+
+@using System.Data
+
+@inject NavigationManager NavigationManager
+@inject InsuranceTable InsuranceTable;
+
+<h3>Edit Insurance</h3>
+<br />
+
+<Field ControlType="TBText" LabelText="Caption" Bind="@rowEDINS["Caption"]" Obj=@rowEDINS></Field>
+<Field ControlType="TBText" LabelText="ShortCaption" Bind="@rowEDINS["ShortCaption"]" Obj=@rowEDINS></Field>
+
+<br />
+<button @onclick="Save">Save</button>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private DataRow rowEDINS;
+
+    protected override void OnInitialized()
+    {
+        rowEDINS = InsuranceTable.FindById(Id);
+    }
+
+    private void Save()
+    {
+        NavigationManager.NavigateTo("/insurance");
+    }
+}

@@ -1,0 +1,36 @@
+﻿@inherits LayoutComponentBase
+
+<div id="page">
+
+    <header id="Title">
+        <section id="Logo"><img src="css/logo.png" /></section>
+    </header>
+
+    <section id="MainTab">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="Main">
+        <section id="Index">
+            <div class="">
+                <nav>
+                    <ul>
+
+                        <li><a href="NestedComponent">Nested Layout</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section id="Content">
+            <div>
+                @Body
+            </div>
+        </section>
+    </section>
+</div>

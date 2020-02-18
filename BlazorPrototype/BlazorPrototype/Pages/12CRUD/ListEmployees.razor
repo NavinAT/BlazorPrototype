@@ -1,0 +1,74 @@
+﻿@page "/listemployees"
+@inherits ListEmployeeBase
+@attribute [Authorize]
+@using BlazorPrototype.Data
+
+<h4>List Employees</h4>
+
+<p>
+    <a href="/createemployee">Create New Employee</a>
+</p>
+@if(EmployeeDetails.ListEmployee == null || EmployeeDetails.ListEmployee.Count == 0)
+{
+    <div class="alert alert-warning">
+        <strong>Warning!</strong> No Employee record found.
+    </div>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Employee Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Date of Birth</th>
+            <th>City</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach(EmployeeInformation employee in EmployeeDetails.ListEmployee)
+        {
+            <tr>
+                <td>@employee.EmployeeName</td>
+                <td>@employee.Department</td>
+                <td>@employee.Salary</td>
+                <td>@employee.Dob</td>
+                <td>@employee.City</td>
+                <td>
+                    <a style="color: blue; cursor: pointer; font-weight: bold" @onclick="(() => ShowEditRazor(employee.EmployeeNumber))">Edit</a>
+                    <a href="/deleteemployee/@employee.EmployeeNumber">Delete</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+
+@if(bShowEditEmployee)
+{
+    <hr/>
+    <EditEmployee EmployeeNumber="@EmployeeId" IsAllowToDisplay="@bShowEditEmployee" OnUpdate="ClickUpdate"></EditEmployee>
+}
+
+
+@code
+{
+    private bool bShowEditEmployee { get; set; }
+    private Guid EmployeeId { get; set; }
+
+    private void ShowEditRazor(Guid uqEmployeeId)
+    {
+        EmployeeId = uqEmployeeId;
+        bShowEditEmployee = true;
+    }
+
+    void ClickUpdate(EmployeeInformation employee)
+    {
+        EmployeeCRUD.EditEmployee(employee.EmployeeNumber, employee);
+
+        EmployeeDetails.ListEmployee = EmployeeCRUD.FetchEmployees();
+        bShowEditEmployee = false;
+    }
+}
