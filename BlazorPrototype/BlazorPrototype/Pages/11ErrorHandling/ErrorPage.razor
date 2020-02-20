@@ -1,0 +1,11 @@
+﻿@page "/ErrorHandling"
+@inject EmployeeDetails EmployeeDetails
+
+<div class="div-container">
+    <p>* Errors at runtime will be shown as golden bar at bottom of the page.</p>
+    <p>* If any error occurs user have to reload the application</p>
+</div>
+
+<div>
+    <p>@EmployeeDetails.ListEmployee[0]</p>
+</div>

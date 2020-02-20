@@ -6,7 +6,7 @@
 <h4>List Employees</h4>
 
 <p>
-    <a href="/createemployee">Create New Employee</a>
+    <a href="createemployee">Create New Employee</a>
 </p>
 @if(EmployeeDetails.ListEmployee == null || EmployeeDetails.ListEmployee.Count == 0)
 {
@@ -33,11 +33,11 @@ else
                 <td>@employee.EmployeeName</td>
                 <td>@employee.Department</td>
                 <td>@employee.Salary</td>
-                <td>@employee.Dob</td>
+                <td>@employee.Dob.ToString("dd MMM yyyy")</td>
                 <td>@employee.City</td>
                 <td>
                     <a style="color: blue; cursor: pointer; font-weight: bold" @onclick="(() => ShowEditRazor(employee.EmployeeNumber))">Edit</a>
-                    <a href="/deleteemployee/@employee.EmployeeNumber">Delete</a>
+                    <a href="deleteemployee/@employee.EmployeeNumber">Delete</a>
                 </td>
             </tr>
         }

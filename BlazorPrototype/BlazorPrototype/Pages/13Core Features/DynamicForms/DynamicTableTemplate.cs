@@ -46,7 +46,7 @@ namespace BlazorPrototype
 					{
 						builder.OpenElement(9, "td");
 						builder.OpenElement(10, "a");
-						builder.AddAttribute(11, "href", $"/{_ComponentName}Edit/{row[0]}");
+						builder.AddAttribute(11, "href", $"{_ComponentName}Edit/{row[0]}");
 						builder.AddContent(12, "Edit");
 						builder.CloseElement();
 						builder.CloseElement();
@@ -56,7 +56,7 @@ namespace BlazorPrototype
 					{
 						builder.OpenElement(13, "td");
 						builder.OpenElement(14, "a");
-						builder.AddAttribute(15, "href", $"/{_ComponentName}Delete/{row[0]}");
+						builder.AddAttribute(15, "href", $"{_ComponentName}Delete/{row[0]}");
 						builder.AddContent(16, "Delete");
 						builder.CloseElement();
 						builder.CloseElement();

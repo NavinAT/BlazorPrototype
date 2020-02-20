@@ -35,9 +35,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="zDBBackUp\" />
     <Folder Include="Pages\08JavaScriptInterop\CallingCSharpMethod\" />
     <Folder Include="Pages\10StateManagement\ThirdPartyDllProtectedBrowserStorage\" />
-    <Folder Include="Pages\11ErrorHandling\" />
     <Folder Include="wwwroot\Images\" />
     <Folder Include="wwwroot\Script\JSInterop\CallingCSharpMethod\" />
   </ItemGroup>

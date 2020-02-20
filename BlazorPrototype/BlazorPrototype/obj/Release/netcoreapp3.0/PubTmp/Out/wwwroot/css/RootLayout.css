@@ -1,0 +1,63 @@
+﻿body {
+}
+
+#page {
+	background-color: #f5f5f5;
+	width: 100%;
+}
+
+#Title {
+	height: 45px;
+	background-color: #236194;
+}
+
+#MainTab {
+	height: 40px;
+	background-color: #236194;
+	padding: 8px 0px 4px 32px;
+	border-left: solid 328px #236194;
+	background-color: #508fb9;
+}
+
+#Main {
+	background-color: #f5f5f5;
+}
+
+#MainTab li {
+	display: inline;	
+}
+
+#Index {
+	background-color: white;
+	width: 328px;
+	height: 848px;
+	float: left;
+	display: inline-block;
+}
+
+#Index li {
+	list-style-type: none;
+}
+
+#Content {
+	margin-top: 15px;
+	margin-left: 32px;
+	display: inline-block;
+	background-color: white;
+}
+
+#Content > div {	
+	padding-left: 10px;
+}
+
+/*
+	Nested layuot
+*/
+#Content-nested {
+	display: inline-block;
+	background-color: aliceblue;
+	border-style: dashed;
+	border-color: #236194;
+	border-width: 1px;
+	padding-left: 0px;
+}

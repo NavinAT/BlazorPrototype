@@ -1,0 +1,22 @@
+﻿input[type=text], input[type=number], select {
+	outline: 0;
+	border-width: 0 0 2px;
+	border-color: #52514f;
+	width: 220px;
+	height: 28px;
+	padding: 1px 0px
+                                             }
+
+.form-control:focus {
+	background-color: #f7f707;
+                          }
+
+option {
+	background-color: white;
+       }
+
+label {
+	color: #757575;
+	font: 12px "Source Sans", sans-serif;
+	padding: 4px 0px 0px
+      }

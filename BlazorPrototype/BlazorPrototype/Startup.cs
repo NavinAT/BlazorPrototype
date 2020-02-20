@@ -61,6 +61,7 @@ namespace BlazorAppCRUD
 				app.UseHsts();
 			}
 
+            app.UsePathBase("/BlazorPrototype");
 			app.UseHttpsRedirection();
 			app.UseStaticFiles();
 
