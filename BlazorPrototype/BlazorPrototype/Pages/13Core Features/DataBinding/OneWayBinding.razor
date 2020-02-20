@@ -1,0 +1,14 @@
+﻿@page "/OneWayBinding"
+
+    <div class="div-container">
+        <p><strong>&#8608; </strong>One way binding is directly binding the <i>'Variable values'</i> to the Html elements.</p>
+        <p><strong>&#8608; </strong>Using <b>"&#64;"</b> <i>'Variable values'</i> can be displayed with Html elements content.</p>
+        <p style="color: @StyleClass"><strong>&#8608; </strong>We can specify style values via <i>'Variables'</i> to the Html Elements</p>
+        <p><strong>&#8608; </strong>@HtmlContent</p>
+    </div>
+
+@code
+{
+    private string StyleClass { get; set; } = "darkseagreen";
+    private string HtmlContent { get; set; } = "Paragraph content can be assigned using Variables";
+}
