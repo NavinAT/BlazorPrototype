@@ -4,12 +4,15 @@
 	border-color: #52514f;
 	width: 220px;
 	height: 28px;
-	padding: 1px 0px
-                                             }
+    padding: 1px 0px;
+}
+input[type=text]:focus, input[type=number]:focus, select:focus {
+    background-color: #f7f707;
+}
 
 .form-control:focus {
-	background-color: #f7f707;
-                          }
+		background-color: #f7f707;
+	}
 
 option {
 	background-color: white;

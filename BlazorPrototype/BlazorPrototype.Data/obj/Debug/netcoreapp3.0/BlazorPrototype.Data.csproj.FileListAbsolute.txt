@@ -1,0 +1,8 @@
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype.Data\bin\Debug\netcoreapp3.0\BlazorPrototype.Data.deps.json
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype.Data\bin\Debug\netcoreapp3.0\BlazorPrototype.Data.dll
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype.Data\bin\Debug\netcoreapp3.0\BlazorPrototype.Data.pdb
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype.Data\obj\Debug\netcoreapp3.0\BlazorPrototype.Data.AssemblyInfoInputs.cache
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype.Data\obj\Debug\netcoreapp3.0\BlazorPrototype.Data.AssemblyInfo.cs
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype.Data\obj\Debug\netcoreapp3.0\BlazorPrototype.Data.dll
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype.Data\obj\Debug\netcoreapp3.0\BlazorPrototype.Data.pdb
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype.Data\obj\Debug\netcoreapp3.0\BlazorPrototype.Data.csprojAssemblyReference.cache

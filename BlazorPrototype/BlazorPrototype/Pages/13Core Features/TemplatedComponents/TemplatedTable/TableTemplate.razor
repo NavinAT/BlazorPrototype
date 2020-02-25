@@ -1,0 +1,32 @@
+﻿@typeparam TItem
+
+<table class="table table-hover">
+    <thead>
+        <tr>@TableHeader</tr>
+    </thead>
+    <tbody>
+    @foreach(TItem item in Items)
+    {
+        <tr>@RowTemplate(item)</tr>
+    }
+    </tbody>
+    <tfoot>
+        <tr>@TableFooter</tr>
+    </tfoot>
+</table>
+
+@code {
+
+    [Parameter]
+    public RenderFragment TableHeader { get; set; }
+
+    [Parameter]
+    public RenderFragment<TItem> RowTemplate { get; set; }
+
+    [Parameter]
+    public RenderFragment TableFooter { get; set; }
+
+    [Parameter]
+    public IReadOnlyList<TItem> Items { get; set; }
+
+}

@@ -1,0 +1,32 @@
+﻿@page "/TwoWayBinding"
+
+    <div class="div-container">
+        <details>
+        <summary style="color: darkslateblue; font-size: large; font-weight: bolder">Two Way Data Binding</summary>
+            <p><strong>&#8608; </strong>Two way binding means, binding the value of the property/member variable to the <i>'value'</i> attribute of input element.</p>
+            <p><strong>&#8608; </strong>Using <b>"&#64;bind=&#64;property"</b> <i>'Variable values'</i> can be bind to the input element.</p>
+            <p><strong>&#8608; </strong>When the textbox loses focus, the property's value is updated.</p>
+        </details>
+    </div>
+<hr/>
+<div>
+    <label>Short Caption*</label>
+    <br/>
+    <input type="text" @bind="@_insurance.ShortCaption"/><br/>
+    <label>Caption*</label>
+    <br/>
+    <input type="text" @bind="@_insurance.Caption"/>
+</div>
+
+@code
+{
+    Insurance _insurance;
+
+    protected override void OnInitialized()
+    {
+        _insurance = new Insurance() { ShortCaption = "USB", Caption = "United States of bank"};
+
+    }
+
+
+}

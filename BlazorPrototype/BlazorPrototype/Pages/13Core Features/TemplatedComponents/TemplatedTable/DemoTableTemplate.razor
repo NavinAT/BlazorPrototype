@@ -1,0 +1,23 @@
+﻿@page "/Tabletemplate"
+@inherits ListEmployeeBase
+
+<TableTemplate Items="@EmployeeDetails.ListEmployee">
+    <TableHeader>
+        <th>Employee Name</th>
+        <th>Department</th>
+        <th>Salary</th>
+        <th>Date of Birth</th>
+        <th>City</th>
+    </TableHeader>
+    <RowTemplate Context="employee">
+        <td>@employee.EmployeeName</td>
+        <td>@employee.Department</td>
+        <td>@employee.Salary</td>
+        <td>@employee.Dob.ToString("dd MMM yyyy")</td>
+        <td>@employee.City</td>
+    </RowTemplate>
+    </TableTemplate>
+
+@code {
+
+}
