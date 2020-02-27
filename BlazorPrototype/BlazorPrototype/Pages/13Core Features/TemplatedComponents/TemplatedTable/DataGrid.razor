@@ -2,29 +2,29 @@
 
 <table class="table table-hover">
     <thead>
-        <tr>@TableHeader</tr>
+        <tr>@DataGridHeader</tr>
     </thead>
     <tbody>
     @foreach(TItem item in Items)
     {
-        <tr>@RowTemplate(item)</tr>
+        <tr>@DataGridColumn(item)</tr>
     }
     </tbody>
     <tfoot>
-        <tr>@TableFooter</tr>
+        <tr>@DataGridFooter</tr>
     </tfoot>
 </table>
 
 @code {
 
     [Parameter]
-    public RenderFragment TableHeader { get; set; }
+    public RenderFragment DataGridHeader { get; set; }
 
     [Parameter]
-    public RenderFragment<TItem> RowTemplate { get; set; }
+    public RenderFragment<TItem> DataGridColumn { get; set; }
 
     [Parameter]
-    public RenderFragment TableFooter { get; set; }
+    public RenderFragment DataGridFooter { get; set; }
 
     [Parameter]
     public IReadOnlyList<TItem> Items { get; set; }
