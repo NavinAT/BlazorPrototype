@@ -47,6 +47,10 @@ app {
 .sidebar .top-row {
     background-color: rgba(0,0,0,0.4);
 }
+#myheader:hover 
+{
+    cursor: grab;
+}
 
 .sidebar .navbar-brand {
     font-size: 1.1rem;

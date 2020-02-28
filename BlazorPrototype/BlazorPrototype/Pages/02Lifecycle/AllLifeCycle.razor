@@ -12,7 +12,7 @@
         {
             renderBuilder.OpenElement(0, "div");
             renderBuilder.AddAttribute(1, "class", "div-container");
-            renderBuilder.AddMarkupContent(2, "<h3>Header Created Dynamically</h3>");
+            renderBuilder.AddMarkupContent(2, "<h3>Header Created Dynamically in OnInitialized()</h3>");
             renderBuilder.AddMarkupContent(3,"<hr/>");
             renderBuilder.OpenElement(4, "p");
             renderBuilder.AddAttribute(5, "style", "color: chartreuse; font-weight: bolder");
@@ -20,7 +20,7 @@
             renderBuilder.CloseElement();
             renderBuilder.OpenElement(7, "h4");
             renderBuilder.AddAttribute(8, "id", "myheader");
-            renderBuilder.AddContent(9, "Mouseover the header to change the color of the content");
+            renderBuilder.AddContent(9, "Mouseover the header to change the color of the content (Script injected in OnAfterRender())");
             renderBuilder.CloseElement();
             renderBuilder.CloseElement();
         };
