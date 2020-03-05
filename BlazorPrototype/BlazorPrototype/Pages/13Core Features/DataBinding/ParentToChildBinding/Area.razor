@@ -1,0 +1,22 @@
+﻿@page "/Parentochildbinding"
+
+<h3>Area</h3>
+
+<div class="div-container">
+    <p>Parent Area : @ParentAreaName</p><br>
+
+    <SubArea @bind-AreaName="ParentAreaName"></SubArea>
+</div>
+<button class="btn btn-outline-warning" @onclick="@ChangeAreaName">Change the Area Name to AdeNet</button>
+
+@code {
+
+    [Parameter]
+    public string ParentAreaName { get; set; } = "M-S India";
+
+    private void ChangeAreaName()
+    {
+        ParentAreaName = "AdeNet";
+    }
+
+}

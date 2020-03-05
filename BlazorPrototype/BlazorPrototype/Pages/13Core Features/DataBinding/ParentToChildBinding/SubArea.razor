@@ -1,0 +1,14 @@
+﻿<h3>Sub Area</h3>
+<div>
+    <p>Area Name : @AreaName</p>
+</div><br>
+
+@code {
+
+    [Parameter]
+    public string AreaName { get; set; }
+
+    [Parameter]
+    public EventCallback<string> AreaNameChanged { get; set; }
+
+}

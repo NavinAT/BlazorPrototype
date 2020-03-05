@@ -177,3 +177,7 @@ C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\n
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\13Core Features\TemplatedComponents\TemplatedTable\DemoTableTemplate.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\13Core Features\TemplatedComponents\TemplatedTable\DataGrid.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\13Core Features\TemplatedComponents\TemplatedTable\DataGrid.razor.g.cs
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\13Core Features\DataBinding\ParentToChildBinding\Area.razor.g.cs
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\13Core Features\DataBinding\ParentToChildBinding\SubArea.razor.g.cs
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\13Core Features\DataBinding\ParentToChildBinding\Area.razor.g.cs
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\13Core Features\DataBinding\ParentToChildBinding\SubArea.razor.g.cs
