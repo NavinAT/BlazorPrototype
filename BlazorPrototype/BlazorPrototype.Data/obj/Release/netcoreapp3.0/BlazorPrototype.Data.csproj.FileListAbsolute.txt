@@ -5,3 +5,5 @@ C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype.Data\obj\Re
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype.Data\obj\Release\netcoreapp3.0\BlazorPrototype.Data.AssemblyInfo.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype.Data\obj\Release\netcoreapp3.0\BlazorPrototype.Data.dll
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype.Data\obj\Release\netcoreapp3.0\BlazorPrototype.Data.pdb
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype.Data\obj\Release\netcoreapp3.0\BlazorPrototype.Data.csprojAssemblyReference.cache
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype.Data\obj\Release\netcoreapp3.0\BlazorPrototype.Data.csproj.CoreCompileInputs.cache

@@ -103,6 +103,8 @@ C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\n
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\12CRUD\EditEmployee.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\12CRUD\ListEmployees.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\13Core Features\DataBinding\OneWayBinding.razor.g.cs
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\13Core Features\DataBinding\ParentToChildBinding\Area.razor.g.cs
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\13Core Features\DataBinding\ParentToChildBinding\SubArea.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\13Core Features\DataBinding\TwoWayBinding.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\13Core Features\DynamicForms\Insurance\InsuranceDelete.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\13Core Features\DynamicForms\Insurance\InsuranceEdit.razor.g.cs
@@ -111,6 +113,8 @@ C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\n
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\13Core Features\EventCallBack\IndividualSeries.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\13Core Features\EventCallBack\NetflixList.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\13Core Features\EventCallBack\ShowSeries.razor.g.cs
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\13Core Features\TemplatedComponents\TemplatedTable\DataGrid.razor.g.cs
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\13Core Features\TemplatedComponents\TemplatedTable\DemoTableTemplate.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\Error.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Shared\MSLayout.razor.g.cs
@@ -147,6 +151,8 @@ C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\n
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\12CRUD\EditEmployee.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\12CRUD\ListEmployees.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\13Core Features\DataBinding\OneWayBinding.razor.g.cs
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\13Core Features\DataBinding\ParentToChildBinding\Area.razor.g.cs
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\13Core Features\DataBinding\ParentToChildBinding\SubArea.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\13Core Features\DataBinding\TwoWayBinding.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\13Core Features\DynamicForms\Insurance\InsuranceDelete.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\13Core Features\DynamicForms\Insurance\InsuranceEdit.razor.g.cs
@@ -155,6 +161,8 @@ C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\n
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\13Core Features\EventCallBack\IndividualSeries.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\13Core Features\EventCallBack\NetflixList.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\13Core Features\EventCallBack\ShowSeries.razor.g.cs
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\13Core Features\TemplatedComponents\TemplatedTable\DataGrid.razor.g.cs
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\13Core Features\TemplatedComponents\TemplatedTable\DemoTableTemplate.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\Error.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Shared\MainLayout.razor.g.cs
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Shared\MSLayout.razor.g.cs
@@ -173,11 +181,5 @@ C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\n
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\BlazorPrototype.csproj.CopyComplete
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\BlazorPrototype.dll
 C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\BlazorPrototype.pdb
-C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\13Core Features\TemplatedComponents\TemplatedTable\DemoTableTemplate.razor.g.cs
-C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\13Core Features\TemplatedComponents\TemplatedTable\DemoTableTemplate.razor.g.cs
-C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\13Core Features\TemplatedComponents\TemplatedTable\DataGrid.razor.g.cs
-C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\13Core Features\TemplatedComponents\TemplatedTable\DataGrid.razor.g.cs
-C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\13Core Features\DataBinding\ParentToChildBinding\Area.razor.g.cs
-C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\13Core Features\DataBinding\ParentToChildBinding\SubArea.razor.g.cs
-C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\13Core Features\DataBinding\ParentToChildBinding\Area.razor.g.cs
-C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\Razor\Pages\13Core Features\DataBinding\ParentToChildBinding\SubArea.razor.g.cs
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\BlazorPrototype.csproj.CoreCompileInputs.cache
+C:\NAVEEN\Education\Blazor Prototype\BlazorPrototype\BlazorPrototype\obj\Debug\netcoreapp3.0\BlazorPrototype.genruntimeconfig.cache

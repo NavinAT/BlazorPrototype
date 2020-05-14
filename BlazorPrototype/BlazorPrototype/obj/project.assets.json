@@ -99,7 +99,7 @@
           }
         }
       },
-      "System.Data.SqlClient/4.8.0": {
+      "System.Data.SqlClient/4.8.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.Registry": "4.7.0",
@@ -398,13 +398,14 @@
         "version.txt"
       ]
     },
-    "System.Data.SqlClient/4.8.0": {
-      "sha512": "xsSRvrPbeXgD6rAqFGw1FZsMLaoDVwzgflHig8OLypDpiyb4XISChy2XOutoNsQIkBP9SJ4nSvhd8uStDU7AiA==",
+    "System.Data.SqlClient/4.8.1": {
+      "sha512": "HKLykcv6eZLbLnSMnlQ6Os4+UAmFE+AgYm92CTvJYeTOBtOYusX3qu8OoGhFrnKZax91UcLcDo5vPrqvJUTSNQ==",
       "type": "package",
-      "path": "system.data.sqlclient/4.8.0",
+      "path": "system.data.sqlclient/4.8.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
@@ -477,7 +478,7 @@
         "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.xml",
         "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.dll",
         "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.xml",
-        "system.data.sqlclient.4.8.0.nupkg.sha512",
+        "system.data.sqlclient.4.8.1.nupkg.sha512",
         "system.data.sqlclient.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -725,7 +726,7 @@
     ".NETCoreApp,Version=v3.0": [
       "BlazorPrototype.Data >= 1.0.0",
       "Microsoft.AspNetCore.ProtectedBrowserStorage >= 0.1.0-alpha.19521.1",
-      "System.Data.SqlClient >= 4.8.0"
+      "System.Data.SqlClient >= 4.8.1"
     ]
   },
   "packageFolders": {
@@ -752,8 +753,10 @@
         "netcoreapp3.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.devexpress.com/HTyUpIBg3XJhhwfsUMfxSqlIhzkrGpvKmgs7r4O28p54wDQdqz/api": {}
       },
       "frameworks": {
         "netcoreapp3.0": {
@@ -779,7 +782,7 @@
           },
           "System.Data.SqlClient": {
             "target": "Package",
-            "version": "[4.8.0, )"
+            "version": "[4.8.1, )"
           }
         },
         "imports": [
@@ -799,7 +802,7 @@
           },
           {
             "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.0.2, 3.0.2]"
+            "version": "[3.0.3, 3.0.3]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
@@ -818,7 +821,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
